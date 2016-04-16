@@ -91,6 +91,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="generate:" destination="9pv-A4-QxB" eventType="touchUpInside" id="74c-pa-m89"/>
+                                    <segue destination="BkW-GN-ckf" kind="show" identifier="segueTest" id="EiD-dL-zYA"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWS-UO-oOk">
@@ -228,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="740" y="-324"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -259,6 +260,9 @@
                                                         <constraint firstAttribute="width" constant="67" id="gew-bk-cke"/>
                                                     </constraints>
                                                     <state key="normal" title="Site Link"/>
+                                                    <connections>
+                                                        <action selector="logAction:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="vvE-md-DDV"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bJ-9e-odn">
                                                     <rect key="frame" x="8" y="8" width="485" height="21"/>
