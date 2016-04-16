@@ -16,7 +16,16 @@ class FirstViewController: UIViewController {
         var ibuCount:Int
         var name:String
         var state:String
+        
+        init(alc: Double, ibu: Int, beer: String, stat: String) {
+            self.alcoholContent = alc
+            self.ibuCount = ibu
+            self.name = beer
+            self.state = stat
+        }
     }
+    
+    var temp = BeerItem(alc: 43.2, ibu: 23, beer: "Beer", stat: "New Jerseu")
     
     
     /** IBU Arrays **/
