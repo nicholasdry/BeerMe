@@ -16,33 +16,9 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZK9-oQ-l53">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="incrementCount:" destination="9pv-A4-QxB" eventType="touchUpInside" id="csH-kj-hgC"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlU-Pc-YQB">
-                                <rect key="frame" x="279" y="106" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="OlU-Pc-YQB" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="86" id="DrQ-aX-dkx"/>
-                            <constraint firstItem="ZK9-oQ-l53" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="fon-mH-Mzl"/>
-                            <constraint firstItem="ZK9-oQ-l53" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="i8F-HF-Ecd"/>
-                            <constraint firstItem="OlU-Pc-YQB" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="t4a-qL-jWO"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
-                    <connections>
-                        <outlet property="textOnScreen" destination="OlU-Pc-YQB" id="7sL-Cc-T3h"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

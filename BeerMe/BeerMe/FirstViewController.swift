@@ -44,15 +44,7 @@ class FirstViewController: UIViewController {
     var per9 = [BeerItem]()
     var per10 = [BeerItem]()
     
-    @IBOutlet var textOnScreen: UILabel!
     
-    var count = 0
-    
-    @IBAction func incrementCount(sender: AnyObject) {
-        count += 1
-        
-        textOnScreen.text = "\(count)"
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
