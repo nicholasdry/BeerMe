@@ -87,7 +87,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybW-om-p56">
-                                <rect key="frame" x="273" y="410" width="46" height="30"/>
+                                <rect key="frame" x="200" y="410" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="generate:" destination="9pv-A4-QxB" eventType="touchUpInside" id="74c-pa-m89"/>
@@ -109,13 +109,10 @@
                                 <rect key="frame" x="115" y="187" width="51" height="31"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wb0-Qz-qnA">
-                                <rect key="frame" x="115" y="230" width="51" height="31"/>
+                                <rect key="frame" x="115" y="221" width="51" height="31"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lO-y9-K6S">
                                 <rect key="frame" x="115" y="259" width="51" height="31"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jxi-1f-CXC">
-                                <rect key="frame" x="115" y="294" width="51" height="31"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UUU-PX-6zc">
                                 <rect key="frame" x="115" y="325" width="51" height="31"/>
@@ -124,7 +121,7 @@
                                 <rect key="frame" x="115" y="359" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXb-Ju-FDW">
-                                <rect key="frame" x="201" y="410" width="64" height="30"/>
+                                <rect key="frame" x="71" y="410" width="64" height="30"/>
                                 <state key="normal" title="Generate"/>
                                 <connections>
                                     <action selector="randomize:" destination="9pv-A4-QxB" eventType="touchUpInside" id="K8Y-Jd-TP1"/>
@@ -197,6 +194,9 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jxi-1f-CXC">
+                                <rect key="frame" x="115" y="290" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -229,24 +229,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
-        </scene>
-        <!--Second New View Controller-->
-        <scene sceneID="UOH-s2-EAq">
-            <objects>
-                <viewController storyboardIdentifier="SecondNewView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="j0h-Cn-shq" customClass="SecondNewViewController" customModule="BeerMe" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KhG-Yw-NHe"/>
-                        <viewControllerLayoutGuide type="bottom" id="FIf-zw-tjM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cU5-G7-vzk">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PaX-MY-A19" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1371" y="-325"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
