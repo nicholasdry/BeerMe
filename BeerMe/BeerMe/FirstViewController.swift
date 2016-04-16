@@ -10,6 +10,16 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet var textOnScreen: UILabel!
+    
+    var count = 0
+    
+    @IBAction func incrementCount(sender: AnyObject) {
+        count += 1
+        
+        textOnScreen.text = "\(count)"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
