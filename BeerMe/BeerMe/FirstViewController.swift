@@ -220,6 +220,12 @@ class FirstViewController: UIViewController {
         beerCount = 0
         ibuPreference = 0
         
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc: SecondNewViewController = storyboard.instantiateViewControllerWithIdentifier("SecondNewView") as! SecondNewViewController
+        
+        self.presentViewController(vc, animated: true, completion: nil)
+        
     }
     
     func checkIBU(numb: Int) -> String {
@@ -327,5 +333,7 @@ class FirstViewController: UIViewController {
         self.presentViewController(vc, animated: true, completion: nil)
         
     }
+
+
     
 }
