@@ -10,6 +10,33 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    var temp10 = []
+    var temp20 = []
+    var temp30 = []
+    var temp40 = []
+    var temp50 = []
+    var temp60 = []
+    var temp70 = []
+    var temp80 = []
+    var temp90 = []
+    var temp100 = []
+    
+    @IBOutlet var switch1: UISwitch!
+    @IBOutlet var switch2: UISwitch!
+    @IBOutlet var switch3: UISwitch!
+    @IBOutlet var switch4: UISwitch!
+    @IBOutlet var switch5: UISwitch!
+    @IBOutlet var switch6: UISwitch!
+    @IBOutlet var switch7: UISwitch!
+    @IBOutlet var switch8: UISwitch!
+    @IBOutlet var switch9: UISwitch!
+    @IBOutlet var switch10: UISwitch!
+    
+    var ibuPreference = 0
+    var beerCount = 0
+    var abvPreference = 0.0
+    
+    
     
     /* All placeholder beer labels */
     @IBOutlet var beer1: UILabel!
