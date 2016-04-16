@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03CDCDE71CC2E48700D6D0DD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CDCDE61CC2E48700D6D0DD /* TableViewCell.swift */; };
+		6908B7D41CC2EC77009BCD17 /* SecondNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908B7D31CC2EC77009BCD17 /* SecondNewViewController.swift */; };
 		A05D8AFF1CC28C8500FE1763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D8AFE1CC28C8500FE1763 /* AppDelegate.swift */; };
 		A05D8B011CC28C8500FE1763 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D8B001CC28C8500FE1763 /* FirstViewController.swift */; };
 		A05D8B031CC28C8500FE1763 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D8B021CC28C8500FE1763 /* SecondViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		03CDCDE61CC2E48700D6D0DD /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		6908B7D31CC2EC77009BCD17 /* SecondNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondNewViewController.swift; sourceTree = "<group>"; };
 		A05D8AFB1CC28C8500FE1763 /* BeerMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05D8AFE1CC28C8500FE1763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A05D8B001CC28C8500FE1763 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -110,8 +112,8 @@
 				A05D8B021CC28C8500FE1763 /* SecondViewController.swift */,
 				03CDCDE61CC2E48700D6D0DD /* TableViewCell.swift */,
 				A05D8B341CC2D33F00FE1763 /* NewViewController.swift */,
-				6908B7D11CC2D7E7009BCD17 /* SecondNewViewController.swift */,
 				A05D8B041CC28C8500FE1763 /* Main.storyboard */,
+				6908B7D31CC2EC77009BCD17 /* SecondNewViewController.swift */,
 				A05D8B301CC2A15600FE1763 /* BeerItem.swift */,
 				A05D8B071CC28C8500FE1763 /* Assets.xcassets */,
 				A05D8B091CC28C8500FE1763 /* LaunchScreen.storyboard */,
@@ -272,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6908B7D21CC2D7E7009BCD17 /* SecondNewViewController.swift in Sources */,
+				6908B7D41CC2EC77009BCD17 /* SecondNewViewController.swift in Sources */,
 				A05D8B031CC28C8500FE1763 /* SecondViewController.swift in Sources */,
 				A05D8AFF1CC28C8500FE1763 /* AppDelegate.swift in Sources */,
 				A05D8B351CC2D33F00FE1763 /* NewViewController.swift in Sources */,
