@@ -232,7 +232,7 @@ class FirstViewController: UIViewController {
         if switch10.on {
             beerCount += 1
             ibuPreference += 100
-        }
+        } 
         
         var result = ibuPreference/beerCount
                print(beerCount)
@@ -245,11 +245,12 @@ class FirstViewController: UIViewController {
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if(segue.identifier == "generateSegue") {
-            var DestViewController: SecondNewViewController = segue.destinationViewController as! SecondNewViewController
-            print(resultBeer)
-            DestViewController.dataPassed = resultBeer!
+  
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier == "segueTest") {
+            var svc = segue!.destinationViewController as! SecondNewViewController;
+            
+            svc.toPass = resultBeer
             
         }
     }

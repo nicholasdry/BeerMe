@@ -28,7 +28,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aq0-2r-fHj">
                                 <rect key="frame" x="90" y="72" width="240" height="195"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Picking local craft beers can be difficult, so what BeerMe! does is tries to make that process a lot simpler! Simply select beers you have tried and liked, then click Find by IBU or Find by ABV to generate a beer you might like!  IBU - International Bitterness Units  ABV - Alcohol by Volume</mutableString>
+                                <string key="text">Picking local craft beers can be difficult, so what BeerMe! does is tries to make that process a lot simpler! Simply select beers you have tried and liked, then click Find by IBU or Find by ABV to generate a beer you might like!  IBU - International Bitterness Units  ABV - Alcohol by Volume</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -91,6 +91,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="generate:" destination="9pv-A4-QxB" eventType="touchUpInside" id="74c-pa-m89"/>
+                                    <segue destination="BkW-GN-ckf" kind="show" identifier="segueTest" id="EiD-dL-zYA"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWS-UO-oOk">
@@ -230,10 +231,38 @@
             </objects>
             <point key="canvasLocation" x="740" y="-324"/>
         </scene>
+        <!--Second New View Controller-->
+        <scene sceneID="lqr-7K-xWN">
+            <objects>
+                <viewController id="BkW-GN-ckf" customClass="SecondNewViewController" customModule="BeerMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jCh-Wb-eRJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="6rk-f8-Pn8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Omo-Xf-iNs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcZ-PM-uyH">
+                                <rect key="frame" x="279" y="262" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelPassedData" destination="xcZ-PM-uyH" id="TxR-Rv-Cw9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KOs-D4-YKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472" y="-324"/>
+        </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="BeerMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
@@ -251,7 +280,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BjU-l8-9dB" id="Xod-3Z-vRc">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqB-EQ-Qme">
@@ -264,7 +293,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bJ-9e-odn">
                                                     <rect key="frame" x="8" y="8" width="485" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -301,6 +330,7 @@
                         <outlet property="tableView" destination="9KS-vk-dby" id="iJC-6F-4Tr"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="355"/>
         </scene>

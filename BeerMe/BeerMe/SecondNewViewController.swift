@@ -1,8 +1,8 @@
 //
-//  NewViewController.swift
+//  SecondViewController.swift
 //  BeerMe
 //
-//  Created by Nicholas Dry on 4/15/16.
+//  Created by Nicholas Dry on 4/16/16.
 //  Copyright © 2016 Nicholas Dry. All rights reserved.
 //
 
@@ -10,22 +10,22 @@ import UIKit
 
 class SecondNewViewController: UIViewController {
     
-    var dataPassed = String()
-    @IBOutlet weak var resultLabel: UILabel!
+    var toPass:String!
     
+    @IBOutlet weak var labelPassedData: UILabel!
     
     override func viewDidLoad() {
-        resultLabel.text = dataPassed
+        super.viewDidLoad()
+        
+        labelPassedData.text = toPass
+        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-
-    @IBAction func closeAction(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        // Dispose of any resources that can be recreated.
     }
     
-  
     
 }
+
