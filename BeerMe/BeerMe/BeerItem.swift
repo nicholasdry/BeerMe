@@ -15,11 +15,11 @@ class BeerItem {
     var name:String = ""
     var state:String = ""
         
-    func create(alc: Double, ibu: Int, beer: String, stat: String) {
-        alcoholContent = alc
-        ibuCount = ibu
-        name = beer
-        state = stat
+    init(alc: Double, ibu: Int, beer: String, stat: String) {
+        self.alcoholContent = alc
+        self.ibuCount = ibu
+        self.name = beer
+        self.state = stat
     }
     
 }

@@ -10,8 +10,10 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    var temp = BeerItem(alc: 12.3, ibu: 3, beer: "Name", stat: "NJ")
+    
     /** IBU Arrays **/
-    var to10 = [BeerItem]()
+    var to10: [Int] = []
     var to20 = [BeerItem]()
     var to30 = [BeerItem]()
     var to40 = [BeerItem]()
