@@ -220,13 +220,18 @@ class FirstViewController: UIViewController {
         beerCount = 0
         ibuPreference = 0
         
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let vc: SecondNewViewController = storyboard.instantiateViewControllerWithIdentifier("SecondNewView") as! SecondNewViewController
-        
-        self.presentViewController(vc, animated: true, completion: nil)
         
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if(segue.identifier == "generateSegue") {
+            var DestViewController: SecondNewViewController = segue.destinationViewController as! SecondNewViewController
+            print(resultBeer)
+            DestViewController.dataPassed = resultBeer!
+            
+        }
+    }
+    
     
     func checkIBU(numb: Int) -> String {
         
@@ -295,7 +300,7 @@ class FirstViewController: UIViewController {
 
         }
         
-       
+        resultBeer = resultString
         return resultString
     }
     
