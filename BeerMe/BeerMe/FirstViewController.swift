@@ -160,6 +160,28 @@ class FirstViewController: UIViewController {
         per6.append(shoreShiver)
         per8.append(pocketTrick)
         
+        var random = Int(arc4random_uniform(UInt32(temp10.count)))
+        beer1.text = temp10[random].name
+        random = Int(arc4random_uniform(UInt32(temp20.count)))
+        beer2.text = temp20[random].name
+        random = Int(arc4random_uniform(UInt32(temp30.count)))
+        beer3.text = temp30[random].name
+        random = Int(arc4random_uniform(UInt32(temp40.count)))
+        beer4.text = temp40[random].name
+        random = Int(arc4random_uniform(UInt32(temp50.count)))
+        beer5.text = temp50[random].name
+        random = Int(arc4random_uniform(UInt32(temp60.count)))
+        beer6.text = temp60[random].name
+        random = Int(arc4random_uniform(UInt32(temp70.count)))
+        beer7.text = temp70[random].name
+        random = Int(arc4random_uniform(UInt32(temp80.count)))
+        beer8.text = temp80[random].name
+        random = Int(arc4random_uniform(UInt32(temp90.count)))
+        beer9.text = temp90[random].name
+        random = Int(arc4random_uniform(UInt32(temp100.count)))
+        beer10.text = temp100[random].name
+
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -219,6 +241,12 @@ class FirstViewController: UIViewController {
         print(resultBeer)
         beerCount = 0
         ibuPreference = 0
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc: SecondNewViewController = storyboard.instantiateViewControllerWithIdentifier("SecondNewView") as! SecondNewViewController
+        
+        self.presentViewController(vc, animated: true, completion: nil)
         
     }
     
@@ -327,5 +355,7 @@ class FirstViewController: UIViewController {
         self.presentViewController(vc, animated: true, completion: nil)
         
     }
+
+
     
 }

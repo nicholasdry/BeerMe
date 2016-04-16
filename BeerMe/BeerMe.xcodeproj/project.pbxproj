@@ -110,6 +110,7 @@
 				A05D8B021CC28C8500FE1763 /* SecondViewController.swift */,
 				03CDCDE61CC2E48700D6D0DD /* TableViewCell.swift */,
 				A05D8B341CC2D33F00FE1763 /* NewViewController.swift */,
+				6908B7D11CC2D7E7009BCD17 /* SecondNewViewController.swift */,
 				A05D8B041CC28C8500FE1763 /* Main.storyboard */,
 				A05D8B301CC2A15600FE1763 /* BeerItem.swift */,
 				A05D8B071CC28C8500FE1763 /* Assets.xcassets */,
@@ -271,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6908B7D21CC2D7E7009BCD17 /* SecondNewViewController.swift in Sources */,
 				A05D8B031CC28C8500FE1763 /* SecondViewController.swift in Sources */,
 				A05D8AFF1CC28C8500FE1763 /* AppDelegate.swift in Sources */,
 				A05D8B351CC2D33F00FE1763 /* NewViewController.swift in Sources */,
