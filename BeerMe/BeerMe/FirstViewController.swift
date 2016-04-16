@@ -10,32 +10,46 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    
+    /* All placeholder beer labels */
+    @IBOutlet var beer1: UILabel!
+    @IBOutlet var beer2: UILabel!
+    @IBOutlet var beer3: UILabel!
+    @IBOutlet var beer4: UILabel!
+    @IBOutlet var beer5: UILabel!
+    @IBOutlet var beer6: UILabel!
+    @IBOutlet var beer7: UILabel!
+    @IBOutlet var beer8: UILabel!
+    @IBOutlet var beer9: UILabel!
+    @IBOutlet var beer10: UILabel!
+    
+    /* IBU Arrays */
+    var to10 = [BeerItem]()
+    var to20 = [BeerItem]()
+    var to30 = [BeerItem]()
+    var to40 = [BeerItem]()
+    var to50 = [BeerItem]()
+    var to60 = [BeerItem]()
+    var to70 = [BeerItem]()
+    var to80 = [BeerItem]()
+    var to90 = [BeerItem]()
+    var to100 = [BeerItem]()
+    
+    /* Percentage Arrays */
+    var per1 = [BeerItem]()
+    var per2 = [BeerItem]()
+    var per3 = [BeerItem]()
+    var per4 = [BeerItem]()
+    var per5 = [BeerItem]()
+    var per6 = [BeerItem]()
+    var per7 = [BeerItem]()
+    var per8 = [BeerItem]()
+    var per9 = [BeerItem]()
+    var per10 = [BeerItem]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        var to10 = [BeerItem]()
-        var to20 = [BeerItem]()
-        var to30 = [BeerItem]()
-        var to40 = [BeerItem]()
-        var to50 = [BeerItem]()
-        var to60 = [BeerItem]()
-        var to70 = [BeerItem]()
-        var to80 = [BeerItem]()
-        var to90 = [BeerItem]()
-        var to100 = [BeerItem]()
-        
-        
-        var per1 = [BeerItem]()
-        var per2 = [BeerItem]()
-        var per3 = [BeerItem]()
-        var per4 = [BeerItem]()
-        var per5 = [BeerItem]()
-        var per6 = [BeerItem]()
-        var per7 = [BeerItem]()
-        var per8 = [BeerItem]()
-        var per9 = [BeerItem]()
-        var per10 = [BeerItem]()
         
          var funnelCakeNitro = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
          var funnelCake = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake", stat: "NJ", brew: "Forgotten Boardwalk")
@@ -61,7 +75,8 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
     
 }
 
