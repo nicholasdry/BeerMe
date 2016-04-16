@@ -10,6 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
+    /* These arrays hold the beers that will be randomly assigned to the top labels. */
     var temp10 = [BeerItem]()
     var temp20 = [BeerItem]()
     var temp30 = [BeerItem]()
@@ -21,6 +22,7 @@ class FirstViewController: UIViewController {
     var temp90 = [BeerItem]()
     var temp100 = [BeerItem]()
     
+    /* These outlets apply to the switches on the screen on our app. */
     @IBOutlet var switch1: UISwitch!
     @IBOutlet var switch2: UISwitch!
     @IBOutlet var switch3: UISwitch!
@@ -32,14 +34,12 @@ class FirstViewController: UIViewController {
     @IBOutlet var switch9: UISwitch!
     @IBOutlet var switch10: UISwitch!
     
-    
+    /* These variables hold the user preferences. */
     var ibuPreference = 0
     var beerCount = 0
     var abvPreference = 0.0
     
-    
-    
-    /* All placeholder beer labels */
+    /* All placeholder beer labels. */
     @IBOutlet var beer1: UILabel!
     @IBOutlet var beer2: UILabel!
     @IBOutlet var beer3: UILabel!
@@ -51,7 +51,7 @@ class FirstViewController: UIViewController {
     @IBOutlet var beer9: UILabel!
     @IBOutlet var beer10: UILabel!
     
-    /* IBU Arrays */
+    /* IBU Arrays. */
     var to10 = [BeerItem]()
     var to20 = [BeerItem]()
     var to30 = [BeerItem]()
@@ -64,7 +64,7 @@ class FirstViewController: UIViewController {
     var to100 = [BeerItem]()
     
     
-    /* Percentage Arrays */
+    /* Percentage Arrays. */
     var per1 = [BeerItem]()
     var per2 = [BeerItem]()
     var per3 = [BeerItem]()
@@ -143,13 +143,13 @@ class FirstViewController: UIViewController {
         to30.append(BeerItem(alc: 8.5, ibu: 30, beer: "This one time at bandcamp", stat: "NJ", brew: "Evil Genius"))
         to30.append(BeerItem(alc: 8.5, ibu: 30, beer: "I’ll have whatever she's having", stat: "NJ", brew: "Evil Genius"))
         
-        var funnelCakeNitro = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
-        var funnelCake = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake", stat: "NJ", brew: "Forgotten Boardwalk")
-        var wtb = BeerItem(alc: 5.0, ibu: 18, beer: "What The Butler Saw", stat: "NJ", brew: "Forgotten Boardwalk")
-        var shoreShiver = BeerItem(alc: 6.9, ibu: 65, beer: "1916 Shore Shiver", stat: "NJ", brew: "Forgotten Boardwalk")
-        var pocketTrick = BeerItem(alc: 8.5, ibu: 100, beer: "Pocket Trick", stat: "NJ", brew: "Forgotten Boardwalk")
-        var ladySix = BeerItem(alc: 5.0, ibu: 18, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
-        var tourist = BeerItem(alc: 3.4, ibu: 00, beer: " The Tourist (Went to Thailand): Tamarind Berliner Weisse", stat: "NJ", brew: "Forgotten Boardwalk")
+        let funnelCakeNitro = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
+        let funnelCake = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake", stat: "NJ", brew: "Forgotten Boardwalk")
+        let wtb = BeerItem(alc: 5.0, ibu: 18, beer: "What The Butler Saw", stat: "NJ", brew: "Forgotten Boardwalk")
+        let shoreShiver = BeerItem(alc: 6.9, ibu: 65, beer: "1916 Shore Shiver", stat: "NJ", brew: "Forgotten Boardwalk")
+        let pocketTrick = BeerItem(alc: 8.5, ibu: 100, beer: "Pocket Trick", stat: "NJ", brew: "Forgotten Boardwalk")
+        let ladySix = BeerItem(alc: 5.0, ibu: 18, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
+        let tourist = BeerItem(alc: 3.4, ibu: 00, beer: " The Tourist (Went to Thailand): Tamarind Berliner Weisse", stat: "NJ", brew: "Forgotten Boardwalk")
         
         per3.append(tourist)
         per5.append(wtb)
@@ -215,7 +215,6 @@ class FirstViewController: UIViewController {
         ibuPreference/=beerCount
         beerCount = 0
         
-        
     }
     
     @IBAction func randomize(sender: AnyObject) {
@@ -223,23 +222,33 @@ class FirstViewController: UIViewController {
         var random = Int(arc4random_uniform(UInt32(temp10.count)))
         beer1.text = temp10[random].name
         random = Int(arc4random_uniform(UInt32(temp20.count)))
-        beer1.text = temp20[random].name
+        beer2.text = temp20[random].name
         random = Int(arc4random_uniform(UInt32(temp30.count)))
-        beer1.text = temp30[random].name
+        beer3.text = temp30[random].name
         random = Int(arc4random_uniform(UInt32(temp40.count)))
-        beer1.text = temp40[random].name
+        beer4.text = temp40[random].name
         random = Int(arc4random_uniform(UInt32(temp50.count)))
-        beer1.text = temp50[random].name
+        beer5.text = temp50[random].name
         random = Int(arc4random_uniform(UInt32(temp60.count)))
-        beer1.text = temp60[random].name
+        beer6.text = temp60[random].name
         random = Int(arc4random_uniform(UInt32(temp70.count)))
-        beer1.text = temp70[random].name
+        beer7.text = temp70[random].name
         random = Int(arc4random_uniform(UInt32(temp80.count)))
-        beer1.text = temp80[random].name
+        beer8.text = temp80[random].name
         random = Int(arc4random_uniform(UInt32(temp90.count)))
-        beer1.text = temp90[random].name
+        beer9.text = temp90[random].name
         random = Int(arc4random_uniform(UInt32(temp100.count)))
-        beer1.text = temp100[random].name
+        beer10.text = temp100[random].name
+        
+    }
+    
+    @IBAction func showHelpWindow(sender: AnyObject) {
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc: NewViewController = storyboard.instantiateViewControllerWithIdentifier("newView") as! NewViewController
+        
+        self.presentViewController(vc, animated: true, completion: nil)
         
     }
     

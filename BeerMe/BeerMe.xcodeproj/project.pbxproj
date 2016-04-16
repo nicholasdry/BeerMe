@@ -16,6 +16,7 @@
 		A05D8B161CC28C8500FE1763 /* BeerMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D8B151CC28C8500FE1763 /* BeerMeTests.swift */; };
 		A05D8B211CC28C8500FE1763 /* BeerMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D8B201CC28C8500FE1763 /* BeerMeUITests.swift */; };
 		A05D8B311CC2A15600FE1763 /* BeerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D8B301CC2A15600FE1763 /* BeerItem.swift */; };
+		A05D8B351CC2D33F00FE1763 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D8B341CC2D33F00FE1763 /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A05D8B201CC28C8500FE1763 /* BeerMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerMeUITests.swift; sourceTree = "<group>"; };
 		A05D8B221CC28C8500FE1763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A05D8B301CC2A15600FE1763 /* BeerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerItem.swift; sourceTree = "<group>"; };
+		A05D8B341CC2D33F00FE1763 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				A05D8AFE1CC28C8500FE1763 /* AppDelegate.swift */,
 				A05D8B001CC28C8500FE1763 /* FirstViewController.swift */,
 				A05D8B021CC28C8500FE1763 /* SecondViewController.swift */,
+				A05D8B341CC2D33F00FE1763 /* NewViewController.swift */,
 				A05D8B041CC28C8500FE1763 /* Main.storyboard */,
 				A05D8B301CC2A15600FE1763 /* BeerItem.swift */,
 				A05D8B071CC28C8500FE1763 /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 			files = (
 				A05D8B031CC28C8500FE1763 /* SecondViewController.swift in Sources */,
 				A05D8AFF1CC28C8500FE1763 /* AppDelegate.swift in Sources */,
+				A05D8B351CC2D33F00FE1763 /* NewViewController.swift in Sources */,
 				A05D8B311CC2A15600FE1763 /* BeerItem.swift in Sources */,
 				A05D8B011CC28C8500FE1763 /* FirstViewController.swift in Sources */,
 			);
