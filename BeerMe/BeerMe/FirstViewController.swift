@@ -32,6 +32,9 @@ class FirstViewController: UIViewController {
     @IBOutlet var switch9: UISwitch!
     @IBOutlet var switch10: UISwitch!
     
+    var uiSwitch: UISwitch!
+    let uiSwitch: UISwitch = 
+    
     var ibuPreference = 0
     var beerCount = 0
     var abvPreference = 0.0
@@ -104,6 +107,14 @@ class FirstViewController: UIViewController {
     }
     
     
+    @IBAction func generate(sender: AnyObject) {
+        
+        
+        //Incrementing beerCount
+        switch uiSwitch {
+        case switch1.on:
+            self.beerCount+1
+        }
     
 }
 
