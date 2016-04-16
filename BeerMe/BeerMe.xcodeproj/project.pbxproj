@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03CDCDE51CC2D18B00D6D0DD /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CDCDE41CC2D18B00D6D0DD /* BeerTableViewCell.swift */; };
 		A05D8AFF1CC28C8500FE1763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D8AFE1CC28C8500FE1763 /* AppDelegate.swift */; };
 		A05D8B011CC28C8500FE1763 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D8B001CC28C8500FE1763 /* FirstViewController.swift */; };
 		A05D8B031CC28C8500FE1763 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05D8B021CC28C8500FE1763 /* SecondViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03CDCDE41CC2D18B00D6D0DD /* BeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeerTableViewCell.swift; path = ../BeerTableViewCell.swift; sourceTree = "<group>"; };
 		A05D8AFB1CC28C8500FE1763 /* BeerMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05D8AFE1CC28C8500FE1763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A05D8B001CC28C8500FE1763 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		A05D8AFD1CC28C8500FE1763 /* BeerMe */ = {
 			isa = PBXGroup;
 			children = (
+				03CDCDE41CC2D18B00D6D0DD /* BeerTableViewCell.swift */,
 				A05D8AFE1CC28C8500FE1763 /* AppDelegate.swift */,
 				A05D8B001CC28C8500FE1763 /* FirstViewController.swift */,
 				A05D8B021CC28C8500FE1763 /* SecondViewController.swift */,
@@ -273,6 +276,7 @@
 				A05D8B351CC2D33F00FE1763 /* NewViewController.swift in Sources */,
 				A05D8B311CC2A15600FE1763 /* BeerItem.swift in Sources */,
 				A05D8B011CC28C8500FE1763 /* FirstViewController.swift in Sources */,
+				03CDCDE51CC2D18B00D6D0DD /* BeerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +501,7 @@
 				A05D8B271CC28C8500FE1763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A05D8B281CC28C8500FE1763 /* Build configuration list for PBXNativeTarget "BeerMeTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +510,7 @@
 				A05D8B2A1CC28C8500FE1763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A05D8B2B1CC28C8500FE1763 /* Build configuration list for PBXNativeTarget "BeerMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +519,7 @@
 				A05D8B2D1CC28C8500FE1763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

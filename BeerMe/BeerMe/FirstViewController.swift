@@ -211,9 +211,14 @@ class FirstViewController: UIViewController {
             ibuPreference += 100
         }
         
-        print(beerCount)
-        ibuPreference/=beerCount
+        var result = ibuPreference/beerCount
+               print(beerCount)
+        print(result)
+        resultBeer = checkIBU(result)
+        print(resultBeer)
         beerCount = 0
+        ibuPreference = 0
+        
         
     }
     
