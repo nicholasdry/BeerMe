@@ -246,13 +246,11 @@ class FirstViewController: UIViewController {
     }
     
   
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if (segue.identifier == "segueTest") {
-            var svc = segue!.destinationViewController as! SecondNewViewController;
-            
-            svc.toPass = resultBeer
-            
-        }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destViewController: SecondNewViewController = segue.destinationViewController as! SecondNewViewController
+        
+        destViewController.labelText = resultBeer!
+        
     }
     
     

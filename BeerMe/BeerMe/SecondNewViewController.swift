@@ -6,18 +6,19 @@
 //  Copyright © 2016 Nicholas Dry. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class SecondNewViewController: UIViewController {
     
-    var toPass:String!
+    @IBOutlet var beerName: UILabel!
     
-    @IBOutlet weak var labelPassedData: UILabel!
+    var labelText = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelPassedData.text = toPass
+        beerName.text = labelText
         // Do any additional setup after loading the view, typically from a nib.
     }
     
