@@ -21,6 +21,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         self.objects.addObject("Cape May Brewing Company")
         self.objects.addObject("Flying Fish Brewery")
         
+        
         self.tableView.reloadData()
     }
 
@@ -54,9 +55,20 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     @IBAction func logAction(sender: UIButton) {
-        if let url = NSURL(string: "https://www.forgottenboardwalk.com") {
-            UIApplication.sharedApplication().openURL(url)
+        if  objects.containsObject("Forgotten BoardWalk"){
+            let url = NSURL(string: "https://www.forgottenboardwalk.com")
+            UIApplication.sharedApplication().openURL(url!)
         }
+        else if objects.containsObject("Cape May Brewing Company"){
+            let url = NSURL(string: "http://capemaybrewery.com")
+            UIApplication.sharedApplication().openURL(url!)
+        }
+        else if objects.containsObject("Flying Fish Brewery"){
+            let url = NSURL(string: "https://www.flyingfish.com")
+            UIApplication.sharedApplication().openURL(url!)
+        }
+
+
     }
 
     
