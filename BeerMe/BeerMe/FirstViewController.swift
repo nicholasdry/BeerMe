@@ -10,7 +10,8 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    /* These arrays hold the beers that will be randomly assigned to the top labels. */
+    var resultBeer:String!
+    
     var temp10 = [BeerItem]()
     var temp20 = [BeerItem]()
     var temp30 = [BeerItem]()
@@ -219,7 +220,77 @@ class FirstViewController: UIViewController {
         beerCount = 0
         ibuPreference = 0
         
+    }
+    
+    func checkIBU(numb: Int) -> String {
         
+        var resultArray = [BeerItem]()
+        var random = 0
+        var resultString: String!
+        
+        if numb <= 10 {
+            resultArray = to10
+            random = Int(arc4random_uniform(UInt32(resultArray.count)))
+            resultString = resultArray[random].name
+
+        }
+        else if numb <= 20 && numb > 10 {
+            resultArray = to20
+            random = Int(arc4random_uniform(UInt32(resultArray.count)))
+            resultString = resultArray[random].name
+            
+        }
+        else if numb <= 30 && numb > 20 {
+            resultArray = to30
+            random = Int(arc4random_uniform(UInt32(resultArray.count)))
+            resultString = resultArray[random].name
+
+        }
+        else if numb <= 40 && numb > 30 {
+            resultArray = to40
+            random = Int(arc4random_uniform(UInt32(resultArray.count)))
+            resultString = resultArray[random].name
+
+        }
+        else if numb <= 50 && numb > 40 {
+            resultArray = to50
+            random = Int(arc4random_uniform(UInt32(resultArray.count)))
+            resultString = resultArray[random].name
+
+        }
+        else if numb <= 60 && numb > 50 {
+            resultArray = to60
+            random = Int(arc4random_uniform(UInt32(resultArray.count)))
+            resultString = resultArray[random].name
+
+        }
+        else if numb <= 70 && numb > 60 {
+            resultArray = to70
+            random = Int(arc4random_uniform(UInt32(resultArray.count)))
+            resultString = resultArray[random].name
+
+        }
+        else if numb <= 80 && numb > 70 {
+            resultArray = to80
+            random = Int(arc4random_uniform(UInt32(resultArray.count)))
+            resultString = resultArray[random].name
+
+        }
+        else if numb <= 90 && numb > 80 {
+            resultArray = to90
+            random = Int(arc4random_uniform(UInt32(resultArray.count)))
+            resultString = resultArray[random].name
+
+        }
+        else if numb <= 100 && numb > 90 {
+            resultArray = to100
+            random = Int(arc4random_uniform(UInt32(resultArray.count)))
+            resultString = resultArray[random].name
+
+        }
+        
+       
+        return resultString
     }
     
     @IBAction func randomize(sender: AnyObject) {
