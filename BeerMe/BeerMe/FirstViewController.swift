@@ -25,7 +25,7 @@ class FirstViewController: UIViewController {
         var to90 = [BeerItem]()
         var to100 = [BeerItem]()
         
-               
+        
         var per1 = [BeerItem]()
         var per2 = [BeerItem]()
         var per3 = [BeerItem]()
