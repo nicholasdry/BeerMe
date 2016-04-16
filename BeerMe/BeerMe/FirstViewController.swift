@@ -46,7 +46,11 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func addBeer(beer: BeerItem) {
+        to10.append(beer)
+    }
 
-
+    
 }
 
