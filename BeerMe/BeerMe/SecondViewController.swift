@@ -43,7 +43,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         
         cell.webLink.tag = indexPath.row
         
-        cell.webLink.addTarget(self, action: "logAction", forControlEvents: .TouchUpInside)
+        cell.webLink.addTarget(self, action: #selector(SecondViewController.logAction), forControlEvents: .TouchUpInside)
         
         return cell
         
@@ -54,13 +54,11 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     @IBAction func logAction(sender: UIButton) {
-        if let url = NSURL(string: "http://www.google.com") {
+        if let url = NSURL(string: "https://www.forgottenboardwalk.com") {
             UIApplication.sharedApplication().openURL(url)
         }
     }
-    
-    
-    
+
     
     
     
