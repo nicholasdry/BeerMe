@@ -12,13 +12,31 @@ import UIKit
 class SecondNewViewController: UIViewController {
     
     @IBOutlet var beerName: UILabel!
+    @IBOutlet weak var brewery: UILabel!
+    @IBOutlet weak var state: UILabel!
+    @IBOutlet weak var alcoholContent: UILabel!
+    @IBOutlet weak var ibu: UILabel!
     
     var labelText = String()
+     var labelText2 = String()
+     var labelText3 = String()
+    var labelText4 = Double()
+    var labelText5 = Int()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         beerName.text = labelText
+        brewery.text = labelText2
+        state.text = labelText3
+        alcoholContent.text = "\(labelText4)"
+        ibu.text = "\(labelText5)"
+
+        
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     

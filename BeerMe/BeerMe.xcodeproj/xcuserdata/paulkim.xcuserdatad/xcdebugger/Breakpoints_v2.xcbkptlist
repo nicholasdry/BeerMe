@@ -6,15 +6,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BeerMe/FirstViewController.swift"
-            timestampString = "482534783.812791"
+            timestampString = "482539899.225241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "generate(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -22,7 +22,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BeerMe/SecondViewController.swift"
@@ -33,6 +33,241 @@
             endingLineNumber = "12"
             landmarkName = "SecondViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondViewController.tableView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondViewController.swift"
+                  timestampString = "482539131.715281"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; BeerMe.SecondViewController"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondViewController.swift"
+                  timestampString = "482539131.71639"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;BeerMe.SecondViewController&gt;"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondViewController.swift"
+                  timestampString = "482539131.716813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BeerMe/FirstViewController.swift"
+            timestampString = "482541931.850485"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
+            landmarkName = "checkIBU(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BeerMe/FirstViewController.swift"
+            timestampString = "482541931.850485"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
+            landmarkName = "checkIBU(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BeerMe/SecondNewViewController.swift"
+            timestampString = "482541957.460073"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "SecondNewViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondNewViewController.labelText5.getter : Swift.Int"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondNewViewController.swift"
+                  timestampString = "482541957.73772"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondNewViewController.labelText5.setter : Swift.Int"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondNewViewController.swift"
+                  timestampString = "482541957.738089"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondNewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; BeerMe.SecondNewViewController"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondNewViewController.swift"
+                  timestampString = "482541957.73826"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondNewViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;BeerMe.SecondNewViewController&gt;"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondNewViewController.swift"
+                  timestampString = "482541957.73845"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "354">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BeerMe/SecondNewViewController.swift"
+            timestampString = "482541958.857811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "SecondNewViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondNewViewController.labelText4.getter : Swift.Double"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondNewViewController.swift"
+                  timestampString = "482541958.863951"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondNewViewController.labelText4.setter : Swift.Double"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondNewViewController.swift"
+                  timestampString = "482541958.86422"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondNewViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; BeerMe.SecondNewViewController"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondNewViewController.swift"
+                  timestampString = "482541958.864406"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BeerMe.SecondNewViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;BeerMe.SecondNewViewController&gt;"
+                  moduleName = "BeerMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulkim/BeerMe/BeerMe/BeerMe/SecondNewViewController.swift"
+                  timestampString = "482541958.864583"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "342">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

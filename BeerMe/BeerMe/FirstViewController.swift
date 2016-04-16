@@ -39,6 +39,7 @@ class FirstViewController: UIViewController {
     var ibuPreference = 0
     var beerCount = 0
     var abvPreference = 0.0
+    var BeerObj:BeerItem = BeerItem(alc: 0.0, ibu: 0, beer: "", stat: "", brew: "")
     
     /* All placeholder beer labels. */
     @IBOutlet var beer1: UILabel!
@@ -237,8 +238,13 @@ class FirstViewController: UIViewController {
         var result = ibuPreference/beerCount
                print(beerCount)
         print(result)
-        resultBeer = checkIBU(result)
+        checkIBU(result)
         print(resultBeer)
+        print(BeerObj.alcoholContent)
+        print(BeerObj.brewery)
+        print(BeerObj.name)
+        print(BeerObj.state)
+
         beerCount = 0
         ibuPreference = 0
         
@@ -250,79 +256,82 @@ class FirstViewController: UIViewController {
         let destViewController: SecondNewViewController = segue.destinationViewController as! SecondNewViewController
         
         destViewController.labelText = resultBeer!
+        destViewController.labelText2 = BeerObj.brewery
+        destViewController.labelText3 = BeerObj.state
+        destViewController.labelText4 = BeerObj.alcoholContent
+        destViewController.labelText5 = BeerObj.ibuCount
         
     }
     
     
-    func checkIBU(numb: Int) -> String {
+    func checkIBU(numb: Int)  {
         
         var resultArray = [BeerItem]()
         var random = 0
-        var resultString: String!
         
         if numb <= 10 {
             resultArray = to10
             random = Int(arc4random_uniform(UInt32(resultArray.count)))
-            resultString = resultArray[random].name
-
+            BeerObj = resultArray[random]
+            
         }
         else if numb <= 20 && numb > 10 {
             resultArray = to20
             random = Int(arc4random_uniform(UInt32(resultArray.count)))
-            resultString = resultArray[random].name
+            BeerObj = resultArray[random]
             
         }
         else if numb <= 30 && numb > 20 {
             resultArray = to30
             random = Int(arc4random_uniform(UInt32(resultArray.count)))
-            resultString = resultArray[random].name
+            BeerObj = resultArray[random]
 
         }
         else if numb <= 40 && numb > 30 {
             resultArray = to40
             random = Int(arc4random_uniform(UInt32(resultArray.count)))
-            resultString = resultArray[random].name
+            BeerObj = resultArray[random]
 
         }
         else if numb <= 50 && numb > 40 {
             resultArray = to50
             random = Int(arc4random_uniform(UInt32(resultArray.count)))
-            resultString = resultArray[random].name
+            BeerObj = resultArray[random]
 
         }
         else if numb <= 60 && numb > 50 {
             resultArray = to60
             random = Int(arc4random_uniform(UInt32(resultArray.count)))
-            resultString = resultArray[random].name
+            BeerObj = resultArray[random]
 
         }
         else if numb <= 70 && numb > 60 {
             resultArray = to70
             random = Int(arc4random_uniform(UInt32(resultArray.count)))
-            resultString = resultArray[random].name
+            BeerObj = resultArray[random]
 
         }
         else if numb <= 80 && numb > 70 {
             resultArray = to80
             random = Int(arc4random_uniform(UInt32(resultArray.count)))
-            resultString = resultArray[random].name
+            BeerObj = resultArray[random]
 
         }
         else if numb <= 90 && numb > 80 {
             resultArray = to90
             random = Int(arc4random_uniform(UInt32(resultArray.count)))
-            resultString = resultArray[random].name
+            BeerObj = resultArray[random]
 
         }
         else if numb <= 100 && numb > 90 {
             resultArray = to100
             random = Int(arc4random_uniform(UInt32(resultArray.count)))
-            resultString = resultArray[random].name
+            BeerObj = resultArray[random]
 
         }
         
-        resultBeer = resultString
-        return resultString
+        resultBeer = BeerObj.name
+    
     }
     
     @IBAction func randomize(sender: AnyObject) {
