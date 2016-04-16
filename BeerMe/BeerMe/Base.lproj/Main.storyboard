@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--New View Controller-->
@@ -17,15 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWS-GY-liT">
-                                <rect key="frame" x="210" y="329" width="54" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWS-GY-liT">
+                                <rect key="frame" x="183" y="353" width="54" height="30"/>
                                 <state key="normal" title="Dismiss"/>
                                 <connections>
                                     <action selector="closeAction:" destination="GvB-qX-ecj" eventType="touchUpInside" id="l2w-IW-bnD"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aq0-2r-fHj">
+                                <rect key="frame" x="90" y="72" width="240" height="195"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Picking local craft beers can be difficult, so what BeerMe! does is tries to make that process a lot simpler! Simply select beers you have tried and liked, then click Find by IBU or Find by ABV to generate a beer you might like!  IBU - International Bitterness Units  ABV - Alcohol by Volume</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2p-mA-B3l">
+                                <rect key="frame" x="151" y="274" width="118" height="30"/>
+                                <state key="normal" title="Learn about IBUs"/>
+                                <connections>
+                                    <action selector="ibuLink:" destination="GvB-qX-ecj" eventType="touchUpInside" id="VuF-MY-5SO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g8-5o-lJ3">
+                                <rect key="frame" x="152" y="305" width="116" height="30"/>
+                                <state key="normal" title="Learn about ABV"/>
+                                <connections>
+                                    <action selector="abvLink:" destination="GvB-qX-ecj" eventType="touchUpInside" id="A7B-aB-ksT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How-To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTv-LW-rpt">
+                                <rect key="frame" x="180" y="28" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aq0-2r-fHj" firstAttribute="leading" secondItem="evJ-gc-fpU" secondAttribute="leadingMargin" constant="70" id="DkD-oU-lM7"/>
+                            <constraint firstItem="qTv-LW-rpt" firstAttribute="top" secondItem="fp4-jX-wjY" secondAttribute="bottom" constant="8" symbolic="YES" id="Hfn-DY-nLt"/>
+                            <constraint firstItem="qTv-LW-rpt" firstAttribute="centerX" secondItem="evJ-gc-fpU" secondAttribute="centerX" id="J7r-NN-Bga"/>
+                            <constraint firstItem="IWS-GY-liT" firstAttribute="top" secondItem="1g8-5o-lJ3" secondAttribute="bottom" constant="18" id="R4s-jW-ghx"/>
+                            <constraint firstItem="aq0-2r-fHj" firstAttribute="centerX" secondItem="evJ-gc-fpU" secondAttribute="centerX" id="Vql-Xz-Gql"/>
+                            <constraint firstItem="1g8-5o-lJ3" firstAttribute="top" secondItem="v2p-mA-B3l" secondAttribute="bottom" constant="1" id="Zba-sm-gCE"/>
+                            <constraint firstItem="IWS-GY-liT" firstAttribute="centerX" secondItem="evJ-gc-fpU" secondAttribute="centerX" id="abo-qg-qCg"/>
+                            <constraint firstItem="t3O-VI-nBB" firstAttribute="top" secondItem="IWS-GY-liT" secondAttribute="bottom" constant="217" id="bMc-6F-hfF"/>
+                            <constraint firstItem="aq0-2r-fHj" firstAttribute="top" secondItem="qTv-LW-rpt" secondAttribute="bottom" constant="23" id="efE-tw-DC5"/>
+                            <constraint firstItem="1g8-5o-lJ3" firstAttribute="centerX" secondItem="evJ-gc-fpU" secondAttribute="centerX" id="gEX-eU-i20"/>
+                            <constraint firstItem="v2p-mA-B3l" firstAttribute="top" secondItem="aq0-2r-fHj" secondAttribute="bottom" constant="7" id="sPU-36-c6R"/>
+                            <constraint firstItem="v2p-mA-B3l" firstAttribute="centerX" secondItem="evJ-gc-fpU" secondAttribute="centerX" id="uNK-rm-qcA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzh-BG-joU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -226,7 +268,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mwl-jQ-w60" id="aiF-fB-0MO">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgotten BoardWalk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwc-bt-c3E">
