@@ -218,4 +218,29 @@ class FirstViewController: UIViewController {
         
     }
     
+    @IBAction func randomize(sender: AnyObject) {
+        
+        var random = Int(arc4random_uniform(UInt32(temp10.count)))
+        beer1.text = temp10[random].name
+        random = Int(arc4random_uniform(UInt32(temp20.count)))
+        beer1.text = temp20[random].name
+        random = Int(arc4random_uniform(UInt32(temp30.count)))
+        beer1.text = temp30[random].name
+        random = Int(arc4random_uniform(UInt32(temp40.count)))
+        beer1.text = temp40[random].name
+        random = Int(arc4random_uniform(UInt32(temp50.count)))
+        beer1.text = temp50[random].name
+        random = Int(arc4random_uniform(UInt32(temp60.count)))
+        beer1.text = temp60[random].name
+        random = Int(arc4random_uniform(UInt32(temp70.count)))
+        beer1.text = temp70[random].name
+        random = Int(arc4random_uniform(UInt32(temp80.count)))
+        beer1.text = temp80[random].name
+        random = Int(arc4random_uniform(UInt32(temp90.count)))
+        beer1.text = temp90[random].name
+        random = Int(arc4random_uniform(UInt32(temp100.count)))
+        beer1.text = temp100[random].name
+        
+    }
+    
 }
