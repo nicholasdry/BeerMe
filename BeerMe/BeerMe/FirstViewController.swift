@@ -25,6 +25,9 @@ class FirstViewController: UIViewController {
         var to90 = [BeerItem]()
         var to100 = [BeerItem]()
         
+        to10.append(BeerItem(alc: <#T##Double#>, ibu: <#T##Int#>, beer: <#T##String#>, stat: <#T##String#>))
+        
+        
         var per1 = [BeerItem]()
         var per2 = [BeerItem]()
         var per3 = [BeerItem]()

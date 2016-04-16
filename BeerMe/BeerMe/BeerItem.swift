@@ -14,12 +14,14 @@ class BeerItem {
     var ibuCount:Int = 0
     var name:String = ""
     var state:String = ""
+    var brewery:String = ""
         
-    init(alc: Double, ibu: Int, beer: String, stat: String) {
+    init(alc: Double, ibu: Int, beer: String, stat: String, brew: String) {
         self.alcoholContent = alc
         self.ibuCount = ibu
         self.name = beer
         self.state = stat
+        self.brewery = brew
     }
     
 }
