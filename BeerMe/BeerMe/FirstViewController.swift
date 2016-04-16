@@ -25,9 +25,7 @@ class FirstViewController: UIViewController {
         var to90 = [BeerItem]()
         var to100 = [BeerItem]()
         
-        to10.append(BeerItem(alc: <#T##Double#>, ibu: <#T##Int#>, beer: <#T##String#>, stat: <#T##String#>))
-        
-        
+               
         var per1 = [BeerItem]()
         var per2 = [BeerItem]()
         var per3 = [BeerItem]()
@@ -39,8 +37,22 @@ class FirstViewController: UIViewController {
         var per9 = [BeerItem]()
         var per10 = [BeerItem]()
         
-        var temp = BeerItem(alc: 1, ibu: 1, beer: "1", stat: "werfg")
-        to10.append(temp)
+         var funnelCakeNitro = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
+         var funnelCake = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake", stat: "NJ", brew: "Forgotten Boardwalk")
+         var wtb = BeerItem(alc: 5.0, ibu: 18, beer: "What The Butler Saw", stat: "NJ", brew: "Forgotten Boardwalk")
+         var shoreShiver = BeerItem(alc: 6.9, ibu: 65, beer: "1916 Shore Shiver", stat: "NJ", brew: "Forgotten Boardwalk")
+         var pocketTrick = BeerItem(alc: 8.5, ibu: 100, beer: "Pocket Trick", stat: "NJ", brew: "Forgotten Boardwalk")
+         var ladySix = BeerItem(alc: 5.0, ibu: 18, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
+         var tourist = BeerItem(alc: 3.4, ibu: 00, beer: " The Tourist (Went to Thailand): Tamarind Berliner Weisse", stat: "NJ", brew: "Forgotten Boardwalk")
+        
+        per3.append(tourist)
+        per5.append(wtb)
+        per5.append(ladySix)
+        per5.append(funnelCakeNitro)
+        per5.append(funnelCake)
+        per6.append(shoreShiver)
+        per8.append(pocketTrick)
+
         
         
     }
