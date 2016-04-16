@@ -14,5 +14,17 @@ class NewViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func ibuLink(sender: AnyObject) {
+        if let url = NSURL(string: "http://www.thebrewenthusiast.com/ibus/") {
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
+    
+    @IBAction func abvLink(sender: AnyObject) {
+        if let url = NSURL(string: "https://en.wikipedia.org/wiki/Alcohol_by_volume") {
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
+    
     
 }
