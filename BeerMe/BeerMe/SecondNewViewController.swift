@@ -27,7 +27,7 @@ class SecondNewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        beerName.text = labelText
+        beerName.text = "Beer Name: \(labelText)"
         brewery.text = labelText2
         state.text = labelText3
         alcoholContent.text = "\(labelText4)"
