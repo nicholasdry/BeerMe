@@ -32,8 +32,6 @@ class FirstViewController: UIViewController {
     @IBOutlet var switch9: UISwitch!
     @IBOutlet var switch10: UISwitch!
     
-    var uiSwitch: UISwitch!
-    let uiSwitch: UISwitch = 
     
     var ibuPreference = 0
     var beerCount = 0
@@ -64,7 +62,7 @@ class FirstViewController: UIViewController {
     var to80 = [BeerItem]()
     var to90 = [BeerItem]()
     var to100 = [BeerItem]()
-
+    
     
     /* Percentage Arrays */
     var per1 = [BeerItem]()
@@ -81,21 +79,21 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
-    temp10.append(BeerItem(alc: 4.2, ibu: 10, beer: "Coors Light", stat: "North America", brew: "Coors Brewing Company"))
-    temp10.append(BeerItem(alc: 4.1, ibu: 10, beer: "Miller Lite", stat: "North America", brew: "Miller Brewing Company"))
-    temp10.append(BeerItem(alc: 4.2, ibu: 10, beer: "Michelob ULTRA", stat: "North America", brew: "Anheuser-Busch"))
-    temp20.append(BeerItem(alc: 5, ibu: 12, beer: "Budweiser", stat: "North America", brew: "Anheuser-Busch"))
-    temp20.append(BeerItem(alc: 4.6, ibu: 19, beer: "Corona Extra", stat: "North America", brew: "Grupo Modelo"))
-    temp30.append(BeerItem(alc: 4.2, ibu: 27, beer: "Bud Light", stat: "North America", brew: "Anheuser-Busch"))
-    temp40.append(BeerItem(alc: 5.6, ibu: 38, beer: "Sierra Nevada: Pale Ale", stat: "California", brew: "Sierra Nevada Brewing Co."))
-    temp50.append(BeerItem(alc: 6.7, ibu: 50, beer: "Victory HopDevil", stat: "Pennsylvania", brew: "Victory Brewing Co."))
-    temp60.append(BeerItem(alc: 6.2, ibu: 60, beer: "Hop Hunter IPA", stat: "California", brew: "Sierra Nevada Brewing Co."))
-    temp70.append(BeerItem(alc: 7.2, ibu: 65, beer: "Torpedo Extra IPA", stat: "California", brew: "Sierra Nevada Brewing Co."))
-    temp80.append(BeerItem(alc: 8.2, ibu: 72, beer: "Lagunitas Maximus", stat: "North America", brew: "Lagunitas Brewing Co."))
-    temp90.append(BeerItem(alc: 9.4, ibu: 87, beer: "I’ll Have Whatever She's Having", stat: "Pennsylvania", brew: "Evil Genius "))
-    temp100.append(BeerItem(alc: 8, ibu: 100, beer: "Heddy Topper", stat: "Vermont", brew: "The Alchemist"))
-
+        
+        temp10.append(BeerItem(alc: 4.2, ibu: 10, beer: "Coors Light", stat: "North America", brew: "Coors Brewing Company"))
+        temp10.append(BeerItem(alc: 4.1, ibu: 10, beer: "Miller Lite", stat: "North America", brew: "Miller Brewing Company"))
+        temp10.append(BeerItem(alc: 4.2, ibu: 10, beer: "Michelob ULTRA", stat: "North America", brew: "Anheuser-Busch"))
+        temp20.append(BeerItem(alc: 5, ibu: 12, beer: "Budweiser", stat: "North America", brew: "Anheuser-Busch"))
+        temp20.append(BeerItem(alc: 4.6, ibu: 19, beer: "Corona Extra", stat: "North America", brew: "Grupo Modelo"))
+        temp30.append(BeerItem(alc: 4.2, ibu: 27, beer: "Bud Light", stat: "North America", brew: "Anheuser-Busch"))
+        temp40.append(BeerItem(alc: 5.6, ibu: 38, beer: "Sierra Nevada: Pale Ale", stat: "California", brew: "Sierra Nevada Brewing Co."))
+        temp50.append(BeerItem(alc: 6.7, ibu: 50, beer: "Victory HopDevil", stat: "Pennsylvania", brew: "Victory Brewing Co."))
+        temp60.append(BeerItem(alc: 6.2, ibu: 60, beer: "Hop Hunter IPA", stat: "California", brew: "Sierra Nevada Brewing Co."))
+        temp70.append(BeerItem(alc: 7.2, ibu: 65, beer: "Torpedo Extra IPA", stat: "California", brew: "Sierra Nevada Brewing Co."))
+        temp80.append(BeerItem(alc: 8.2, ibu: 72, beer: "Lagunitas Maximus", stat: "North America", brew: "Lagunitas Brewing Co."))
+        temp90.append(BeerItem(alc: 9.4, ibu: 87, beer: "I’ll Have Whatever She's Having", stat: "Pennsylvania", brew: "Evil Genius "))
+        temp100.append(BeerItem(alc: 8, ibu: 100, beer: "Heddy Topper", stat: "Vermont", brew: "The Alchemist"))
+        
         
         to30.append(BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten BoardWalk"))
         to30.append(BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake", stat: "NJ", brew: "Forgotten BoardWalk"))
@@ -110,63 +108,25 @@ class FirstViewController: UIViewController {
         to10.append(BeerItem(alc: 5.0, ibu: 10, beer: "I Know What You Did Last Shandy", stat: "NJ", brew: "Cape May Brewing Company"))
         to80.append(BeerItem(alc: 9.2, ibu: 80, beer: "Concrete Ship", stat: "NJ", brew: "Cape May Brewing Company"))
         to40.append(BeerItem(alc: 5.4, ibu: 35, beer: "Honey Porter", stat: "NJ", brew: "Cape May Brewing Company"))
-        to80.append(BeerItem(alc: 8.5, ibu: 80, beer: "Coastal Evacuation with Brett", stat: "NJ", brew: "Cape May Brewing Company")
-        to60.append(BeerItem(alc: 8.0, ibu: 60, beer: "Coastal Evacuation", stat: "NJ", brew: "Cape May Brewing Company")
-                                    to20.append(BeerItem(alc: 5.0, ibu: 15, beer: "Foreshore Cherry Limeaide Shandy", stat: "NJ", brew: "Cape May Brewing Company")
-                                        to50.append(BeerItem(alc: 5.0, ibu: 45, beer: "Corrosion Sour IPA", stat: "NJ", brew: "Cape May Brewing Company")
-                                            to70.append(BeerItem(alc: 7.7, ibu: 70, beer: "White Caps", stat: "NJ", brew: "Cape May Brewing Company")
-                                                to100.append(BeerItem(alc: 9.6, ibu: 100, beer: "Sawyer’s Swap Barleywine Ale", stat: "NJ", brew: "Cape May Brewing Company")
-                                                    to30.append(BeerItem(alc: 6.9, ibu: 23, beer: "Bringing Sexy Bock", stat: "NJ", brew: "Cape May Brewing Company")
-                                                        to50.append(BeerItem(alc: 6.5, ibu: 48, beer: "Cornelius Mey IPA", stat: "NJ", brew: "Cape May Brewing Company")
-                                                            to40.append(BeerItem(alc: 6.2, ibu: 35, beer: "Misty Dawn Saison", stat: "NJ", brew: "Cape May Brewing Company")
-                                                                to40.append(BeerItem(alc: 5.4, ibu: 35, beer: "Honey Porter", stat: "NJ", brew: "Cape May Brewing Company")
-                                                                    to80.append(BeerItem(alc: 8.5, ibu: 80, beer: "Coastal Evacuation with Brett", stat: "NJ", brew: "Cape May Brewing Company")
-                                                                        to60.append(BeerItem(alc: 8.0, ibu: 60, beer: "Coastal Evacuation", stat: "NJ", brew: "Cape May Brewing Company")
-                                                                            to20.append(BeerItem(alc: 5.0, ibu: 15, beer: "Foreshore Cherry Limeaide Shandy", stat: "NJ", brew: "Cape May Brewing Company")
-                                                                                to50.append(BeerItem(alc: 5.0, ibu: 45, beer: "Corrosion Sour IPA", stat: "NJ", brew: "Cape May Brewing Company")
-                                                                                    to70.append(BeerItem(alc: 7.7, ibu: 70, beer: "White Caps", stat: "NJ", brew: "Cape May Brewing Company")
-                                                                                        to100.append(BeerItem(alc: 9.6, ibu: 100, beer: "Sawyer’s Swap Barleywine Ale", stat: "NJ", brew: "Cape May Brewing Company")
-                                                                                            to30.append(BeerItem(alc: 6.9, ibu: 23, beer: "Bringing Sexy Bock", stat: "NJ", brew: "Cape May Brewing Company")
-                                                                                                to10.append(BeerItem(alc: 7.2, ibu: 9, beer: "Abbey Dubbel", stat: "NJ", brew: "Flying Fish Brewery")
-                                                                                                    to20.append(BeerItem(alc: 5.2, ibu: 11, beer: "Extra Pale Ale", stat: "NJ", brew: "Flying Fish Brewery")
-                                                                                                        to10.append(BeerItem(alc: 25.3, ibu: 6, beer: "Hopfish IPA", stat: "NJ", brew: "Flying Fish Brewery")
-                                                                                                            to10.append(BeerItem(alc: 23.8, ibu: 10, beer: "Exit 4 American Trippel", stat: "NJ", brew: "Flying Fish Brewery")
-                                                                                                                to70.append(BeerItem(alc: 8.2, ibu: 62, beer: "Exit 16 Wild Rice Double IPA", stat: "NJ", brew: "Flying Fish Brewery")
-                                                                                                                    to100.append(BeerItem(alc: 8.4, ibu: 100, beer: "Teddy 2xIPA", stat: "NJ", brew: "Village Idiot Brewing")
-                                                                                                                        to70.append(BeerItem(alc: 6.8, ibu: 70, beer: "The Hoptimizer", stat: "NJ", brew: "Village Idiot Brewing")
-                                                                                                                            to30.append(BeerItem(alc: 4.8, ibu: 23, beer: "Bridgetown Blonde Ale", stat: "NJ", brew: "Village Idiot Brewing")
-                                                                                                                                to50.append(BeerItem(alc: 6.1, ibu: 42, beer: "Richs Revolutionary Ale", stat: "NJ", brew: "Village Idiot Brewing")
-                                                                                                                                    to100.append(BeerItem(alc: 8.4, ibu: 100, beer: "Teddy 2xIPA", stat: "NJ", brew: "Village Idiot Brewing")
-                                                                                                                                        to20.append(BeerItem(alc: 4.8, ibu: 20, beer: "Namaste", stat: "DE", brew: "Dogfish")
-                                                                                                                                            to60.append(BeerItem(alc: 6.0, ibu: 60, beer: "60 Minute IPA", stat: "DE", brew: "Dogfish")
-                                                                                                                                                to90.append(BeerItem(alc: 9.0, ibu: 90, beer: "90 Minute IPA", stat: "DE", brew: "Dogfish")
-                                                                                                                                                    to50.append(BeerItem(alc: 7.2, ibu: 50, beer: "Indian Brown Ale", stat: "DE", brew: "Dogfish")
-                                                                                                                                                        to20.append(BeerItem(alc: 9.0, ibu: 12, beer: "Midas Touch", stat: "DE", brew: "Dogfish")
-                                                                                                                                                            to30.append(BeerItem(alc: 8.5, ibu: 30, beer: "The Files are “IN” the computer?", stat: "NJ", brew: "Evil Genius")
-                                                                                                                                                                to30.append(BeerItem(alc: 8.5, ibu: 30, beer: "This one time at bandcamp", stat: "NJ", brew: "Evil Genius")
-                                                                                                                                                                    to30.append(BeerItem(alc: 8.5, ibu: 30, beer: "I’ll have whatever she's having", stat: "NJ", brew: "Evil Genius")
         
-    
-         var funnelCakeNitro = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
-         var funnelCake = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake", stat: "NJ", brew: "Forgotten Boardwalk")
-         var wtb = BeerItem(alc: 5.0, ibu: 18, beer: "What The Butler Saw", stat: "NJ", brew: "Forgotten Boardwalk")
-         var shoreShiver = BeerItem(alc: 6.9, ibu: 65, beer: "1916 Shore Shiver", stat: "NJ", brew: "Forgotten Boardwalk")
-         var pocketTrick = BeerItem(alc: 8.5, ibu: 100, beer: "Pocket Trick", stat: "NJ", brew: "Forgotten Boardwalk")
-         var ladySix = BeerItem(alc: 5.0, ibu: 18, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
-         var tourist = BeerItem(alc: 3.4, ibu: 00, beer: " The Tourist (Went to Thailand): Tamarind Berliner Weisse", stat: "NJ", brew: "Forgotten Boardwalk")
+        var funnelCake = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake", stat: "NJ", brew: "Forgotten Boardwalk")
+        var wtb = BeerItem(alc: 5.0, ibu: 18, beer: "What The Butler Saw", stat: "NJ", brew: "Forgotten Boardwalk")
+        var shoreShiver = BeerItem(alc: 6.9, ibu: 65, beer: "1916 Shore Shiver", stat: "NJ", brew: "Forgotten Boardwalk")
+        var pocketTrick = BeerItem(alc: 8.5, ibu: 100, beer: "Pocket Trick", stat: "NJ", brew: "Forgotten Boardwalk")
+        var ladySix = BeerItem(alc: 5.0, ibu: 18, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
+        var tourist = BeerItem(alc: 3.4, ibu: 00, beer: " The Tourist (Went to Thailand): Tamarind Berliner Weisse", stat: "NJ", brew: "Forgotten Boardwalk")
         
         per3.append(tourist)
         per5.append(wtb)
         per5.append(ladySix)
-        per5.append(funnelCakeNitro)
         per5.append(funnelCake)
         per6.append(shoreShiver)
         per8.append(pocketTrick)
-
+        
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -177,10 +137,52 @@ class FirstViewController: UIViewController {
         
         
         //Incrementing beerCount
-        switch uiSwitch {
-        case switch1.on:
-            self.beerCount+1
+        if switch1.on {
+            beerCount += 1
+            ibuPreference += 10
         }
+        if switch2.on {
+            beerCount += 1
+            ibuPreference += 20
+        }
+        if switch3.on {
+            beerCount += 1
+            ibuPreference += 30
+        }
+        if switch4.on {
+            beerCount += 1
+            ibuPreference += 40
+        }
+        if switch5.on {
+            beerCount += 1
+            ibuPreference += 50
+        }
+        if switch6.on {
+            beerCount += 1
+            ibuPreference += 60
+        }
+        if switch7.on {
+            beerCount += 1
+            ibuPreference += 70
+        }
+        if switch8.on {
+            beerCount += 1
+            ibuPreference += 80
+        }
+        if switch9.on {
+            beerCount += 1
+            ibuPreference += 90
+        }
+        if switch10.on {
+            beerCount += 1
+            ibuPreference += 100
+        }
+        
+        print(beerCount)
+        ibuPreference/=beerCount
+        beerCount = 0
+        
+        
+    }
     
 }
-
