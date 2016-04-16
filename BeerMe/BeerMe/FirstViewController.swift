@@ -25,7 +25,7 @@ class FirstViewController: UIViewController {
         }
     }
     
-    var temp = BeerItem(alc: 43.2, ibu: 23, beer: "Beer", stat: "New Jerseu")
+    var temp = BeerItem(alc: 43.2, ibu: 23, beer: "Beer", stat: "New Jersey")
     
     
     /** IBU Arrays **/
