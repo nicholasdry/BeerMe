@@ -46,6 +46,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         
         cell.webLink.addTarget(self, action: #selector(SecondViewController.logAction), forControlEvents: .TouchUpInside)
         
+        
+        
         return cell
         
     }
@@ -55,17 +57,19 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     @IBAction func logAction(sender: UIButton) {
+        
+        let btnTag = sender.tag
 
-        if  objects.containsObject("Forgotten BoardWalk"){
-            var url = NSURL(string: "https://www.forgottenboardwalk.com")
+        if  btnTag == 0{
+            let url = NSURL(string: "https://www.forgottenboardwalk.com")
             UIApplication.sharedApplication().openURL(url!)
         }
-        else if objects.containsObject("Cape May Brewing Company"){
-            var url2 = NSURL(string: "http://capemaybrewery.com")
+        else if btnTag == 1{
+            let url2 = NSURL(string: "http://capemaybrewery.com")
             UIApplication.sharedApplication().openURL(url2!)
         }
-        else if objects.containsObject("Flying Fish Brewery"){
-            var url3 = NSURL(string: "https://www.flyingfish.com")
+        else if btnTag == 2{
+            let url3 = NSURL(string: "https://www.flyingfish.com")
             UIApplication.sharedApplication().openURL(url3!)
         }
        
