@@ -124,14 +124,14 @@
                                 <color key="backgroundColor" red="1" green="0.58238707710556137" blue="0.010850775087705267" alpha="0.62699353448275863" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybW-om-p56">
-                                <rect key="frame" x="180" y="486" width="107" height="30"/>
-                                <state key="normal" title="Find Me a Beer!"/>
+                                <rect key="frame" x="37" y="464" width="149" height="30"/>
+                                <state key="normal" title="IBU Recommendation"/>
                                 <connections>
                                     <action selector="generate:" destination="9pv-A4-QxB" eventType="touchUpInside" id="74c-pa-m89"/>
                                     <segue destination="Upx-NO-NgK" kind="show" id="fHD-bc-Yi2"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SWS-UO-oOk">
+                            <switch opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" onImage="checked" offImage="unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="SWS-UO-oOk">
                                 <rect key="frame" x="37" y="74" width="51" height="31"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dZO-41-6Kk">
@@ -159,8 +159,8 @@
                                 <rect key="frame" x="37" y="425" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXb-Ju-FDW">
-                                <rect key="frame" x="43" y="486" width="103" height="30"/>
-                                <state key="normal" title="Get New Beers"/>
+                                <rect key="frame" x="37" y="521" width="118" height="30"/>
+                                <state key="normal" title="Refresh Beer List"/>
                                 <connections>
                                     <action selector="randomize:" destination="9pv-A4-QxB" eventType="touchUpInside" id="K8Y-Jd-TP1"/>
                                 </connections>
@@ -228,6 +228,14 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jxi-1f-CXC">
                                 <rect key="frame" x="37" y="347" width="51" height="31"/>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcl-Wa-GmQ">
+                                <rect key="frame" x="37" y="494" width="154" height="30"/>
+                                <state key="normal" title="ABV Recommendation"/>
+                                <connections>
+                                    <action selector="generateABV:" destination="9pv-A4-QxB" eventType="touchUpInside" id="uwF-lT-ELN"/>
+                                    <segue destination="Upx-NO-NgK" kind="show" id="sjV-8H-VzH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -449,7 +457,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checked" width="590" height="587"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="unchecked" width="590" height="587"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sjV-8H-VzH"/>
+    </inferredMetricsTieBreakers>
 </document>
