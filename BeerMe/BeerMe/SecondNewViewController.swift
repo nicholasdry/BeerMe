@@ -18,8 +18,8 @@ class SecondNewViewController: UIViewController {
     @IBOutlet weak var ibu: UILabel!
     
     var labelText = String()
-     var labelText2 = String()
-     var labelText3 = String()
+    var labelText2 = String()
+    var labelText3 = String()
     var labelText4 = Double()
     var labelText5 = Int()
     
@@ -28,10 +28,10 @@ class SecondNewViewController: UIViewController {
         super.viewDidLoad()
         
         beerName.text = "Beer Name: \(labelText)"
-        brewery.text = labelText2
-        state.text = labelText3
-        alcoholContent.text = "\(labelText4)"
-        ibu.text = "\(labelText5)"
+        brewery.text = "Brewery: \(labelText2)"
+        state.text = "State: \(labelText3)"
+        alcoholContent.text = "ABV: \(labelText4)"
+        ibu.text = "IBU: \(labelText5)"
 
         
         
@@ -45,6 +45,21 @@ class SecondNewViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func googleSearch(sender: AnyObject) {
+        let query = labelText.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        let breweryName = labelText2.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        print(breweryName)
+        
+        let website = "http://google.com/search?q=where+to+find+" + query + breweryName
+        if let url = NSURL(string: website) {
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
+
+    @IBAction func closeAction(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
     
 }
 
