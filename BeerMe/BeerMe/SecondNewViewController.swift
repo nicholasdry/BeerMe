@@ -50,7 +50,7 @@ class SecondNewViewController: UIViewController {
         let breweryName = labelText2.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
         print(breweryName)
         
-        let website = "http://google.com/search?q=where+to+find+" + query + breweryName
+        let website = "http://google.com/search?q=where+to+find+" + query + "+" + breweryName
         if let url = NSURL(string: website) {
             UIApplication.sharedApplication().openURL(url)
         }
