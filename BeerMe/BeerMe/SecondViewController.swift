@@ -20,6 +20,9 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         self.objects.addObject("Forgotton BoardWalk")
         self.objects.addObject("Cape May Brewing Company")
         self.objects.addObject("Flying Fish Brewery")
+        self.objects.addObject("Village Idiot Brewing")
+        self.objects.addObject("Dogfish")
+        self.objects.addObject("Evil Genius")
         
         
         self.tableView.reloadData()
@@ -72,7 +75,19 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
             let url3 = NSURL(string: "https://www.flyingfish.com")
             UIApplication.sharedApplication().openURL(url3!)
         }
-       
+        else if btnTag == 3{
+            let url4 = NSURL(string: "http://villageidiotbrewing.com")
+            UIApplication.sharedApplication().openURL(url4!)
+        }
+        else if btnTag == 4{
+            let url5 = NSURL(string: "http://www.dogfish.com")
+            UIApplication.sharedApplication().openURL(url5!)
+        }
+        else if btnTag == 5{
+            let url6 = NSURL(string: "http://www.evilgeniusbeer.com")
+            UIApplication.sharedApplication().openURL(url6!)
+        }
+
 
     }
 
