@@ -192,6 +192,9 @@ class FirstViewController: UIViewController {
     
     @IBAction func generate(sender: AnyObject) {
         
+        beerCount = 0
+        ibuPreference = 0
+        
         
         //Incrementing beerCount
         if switch1.on {
@@ -235,31 +238,37 @@ class FirstViewController: UIViewController {
             ibuPreference += 100
         } 
         
-        var result = ibuPreference/beerCount
-               print(beerCount)
-        print(result)
-        checkIBU(result)
-        print(resultBeer)
-        print(BeerObj.alcoholContent)
-        print(BeerObj.brewery)
-        print(BeerObj.name)
-        print(BeerObj.state)
-
-        beerCount = 0
-        ibuPreference = 0
-        
+        if beerCount == 0 {
+            print("Nothing")
+        } else {
+            var result = ibuPreference/beerCount
+            print(beerCount)
+            print(result)
+            checkIBU(result)
+            print(resultBeer)
+            print(BeerObj.alcoholContent)
+            print(BeerObj.brewery)
+            print(BeerObj.name)
+            print(BeerObj.state)
+            
+            
+        }
         
     }
     
   
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destViewController: SecondNewViewController = segue.destinationViewController as! SecondNewViewController
-        
-        destViewController.labelText = resultBeer!
-        destViewController.labelText2 = BeerObj.brewery
-        destViewController.labelText3 = BeerObj.state
-        destViewController.labelText4 = BeerObj.alcoholContent
-        destViewController.labelText5 = BeerObj.ibuCount
+        if beerCount == 0 {
+            print("Nothing")
+        } else {
+            let destViewController: SecondNewViewController = segue.destinationViewController as! SecondNewViewController
+            
+            destViewController.labelText = resultBeer!
+            destViewController.labelText2 = BeerObj.brewery
+            destViewController.labelText3 = BeerObj.state
+            destViewController.labelText4 = BeerObj.alcoholContent
+            destViewController.labelText5 = BeerObj.ibuCount
+        }
         
     }
     
