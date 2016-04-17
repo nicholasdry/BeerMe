@@ -12,6 +12,7 @@ class FirstViewController: UIViewController {
     
     var resultBeer:String!
     
+    /* These arrays hold the beers in the FirstView */
     var temp10 = [BeerItem]()
     var temp20 = [BeerItem]()
     var temp30 = [BeerItem]()
@@ -96,6 +97,7 @@ class FirstViewController: UIViewController {
         temp90.append(BeerItem(alc: 9.4, ibu: 87, beer: "I’ll Have Whatever She's Having", stat: "Pennsylvania", brew: "Evil Genius "))
         temp100.append(BeerItem(alc: 8, ibu: 100, beer: "Heddy Topper", stat: "Vermont", brew: "The Alchemist"))
         
+        /* The following are added to the IBU sorted arrays. */
         to30.append(BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten BoardWalk"))
         to30.append(BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake", stat: "NJ", brew: "Forgotten BoardWalk"))
         to20.append(BeerItem(alc: 5.0, ibu: 18, beer: "What the Butler Saw", stat: "NJ", brew: "Forgotten BoardWalk"))
@@ -145,6 +147,7 @@ class FirstViewController: UIViewController {
         to30.append(BeerItem(alc: 8.5, ibu: 30, beer: "This one time at bandcamp", stat: "NJ", brew: "Evil Genius"))
         to30.append(BeerItem(alc: 8.5, ibu: 30, beer: "I’ll have whatever she's having", stat: "NJ", brew: "Evil Genius"))
         
+        /* These are added to the percentage arrays. */
         let funnelCakeNitro = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake NITRO", stat: "NJ", brew: "Forgotten Boardwalk")
         let funnelCake = BeerItem(alc: 5.5, ibu: 25, beer: "Funnel Cake", stat: "NJ", brew: "Forgotten Boardwalk")
         let wtb = BeerItem(alc: 5.0, ibu: 18, beer: "What The Butler Saw", stat: "NJ", brew: "Forgotten Boardwalk")
@@ -161,6 +164,7 @@ class FirstViewController: UIViewController {
         per6.append(shoreShiver)
         per8.append(pocketTrick)
         
+        /* These populate the first list of suggested beers. */
         var random = Int(arc4random_uniform(UInt32(temp10.count)))
         beer1.text = temp10[random].name
         random = Int(arc4random_uniform(UInt32(temp20.count)))
@@ -241,7 +245,7 @@ class FirstViewController: UIViewController {
         if beerCount == 0 {
             print("Nothing")
         } else {
-            var result = ibuPreference/beerCount
+            let result = ibuPreference/beerCount
             print(beerCount)
             print(result)
             checkIBU(result)

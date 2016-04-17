@@ -50,7 +50,7 @@ class SecondNewViewController: UIViewController {
         let breweryName = labelText2.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
         print(breweryName)
         
-        let website = "http://google.com/search?q=where+to+find+" + query + breweryName
+        let website = "http://google.com/search?q=where+to+find+" + query + "+" + breweryName
         if let url = NSURL(string: website) {
             UIApplication.sharedApplication().openURL(url)
         }
@@ -59,7 +59,29 @@ class SecondNewViewController: UIViewController {
     @IBAction func closeAction(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    func displayAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        presentViewController(alertController, animated: true, completion: nil)
+        return
+    }
+    
+    func displayShareSheet(shareContent:String) {
+        let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
+        presentViewController(activityViewController, animated: true, completion: {})
+    }
 
+    @IBAction func myShareButton(sender: UIButton) {
+        // Check and see if the text field is empty
+        if (beerName.text == "") {
+            // The text field is empty so display an Alert
+            displayAlert("Warning", message: "No beer to share!")
+        } else {
+            // We have contents so display the share sheet
+            displayShareSheet(beerName.text!)
+        }
+    }
     
 }
 
