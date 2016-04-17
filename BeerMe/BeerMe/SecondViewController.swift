@@ -56,26 +56,18 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBAction func logAction(sender: UIButton) {
 
-        
-        switch objects {
-            
-        case objects.containsObject("Forgotten BoardWalk"):
+        if  objects.containsObject("Forgotten BoardWalk"){
             var url = NSURL(string: "https://www.forgottenboardwalk.com")
             UIApplication.sharedApplication().openURL(url!)
-            
-        case objects.containsObject("Cape May Brewing Company"):
+        }
+        else if objects.containsObject("Cape May Brewing Company"){
             var url2 = NSURL(string: "http://capemaybrewery.com")
             UIApplication.sharedApplication().openURL(url2!)
-
-        case objects.containsObject("Flying Fish Brewery"):
+        }
+        else if objects.containsObject("Flying Fish Brewery"){
             var url3 = NSURL(string: "https://www.flyingfish.com")
             UIApplication.sharedApplication().openURL(url3!)
-
-            
-        default:
-            break;
         }
-        
        
 
     }
