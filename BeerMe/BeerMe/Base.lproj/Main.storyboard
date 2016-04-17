@@ -372,7 +372,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9KS-vk-dby">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="BjU-l8-9dB" customClass="TableViewCell" customModule="BeerMe" customModuleProvider="target">
@@ -424,7 +424,7 @@
                             <constraint firstItem="9KS-vk-dby" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="7Gm-Sn-FBn"/>
                             <constraint firstAttribute="trailing" secondItem="9KS-vk-dby" secondAttribute="trailing" id="O7U-zd-gB2"/>
                             <constraint firstItem="9KS-vk-dby" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="kL8-Qb-JkH"/>
-                            <constraint firstItem="9KS-vk-dby" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="uFI-HM-jux"/>
+                            <constraint firstItem="9KS-vk-dby" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="20" id="uFI-HM-jux"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Breweries" image="second" id="cPa-gy-q4n"/>
